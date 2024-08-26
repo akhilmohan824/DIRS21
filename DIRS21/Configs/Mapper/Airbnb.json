@@ -1,0 +1,22 @@
+[
+  {
+    "source": {
+      "identifier": "Airbnb.Reservation",
+      "typeName": "DIRS21.Partners.Airbnb.Reservationn"
+    },
+    "target": {
+      "identifier": "Model.Reservation",
+      "typeName": "DIRS21.Partners.Internal.Reservation"
+    }
+  },
+  {
+    "source": {
+      "identifier": "Model.Reservation",
+      "typeName": "DIRS21.Partners.Internal.Reservation"
+    },
+    "target": {
+      "identifier": "Airbnb.Reservation",
+      "typeName": "DIRS21.Partners.Airbnb.Reservationn"
+    }
+  }
+]

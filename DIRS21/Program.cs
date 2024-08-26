@@ -1,6 +1,7 @@
 ﻿using DIRS21.Mapper;
-using DIRS21.Models.Internal;
-using GoogleReservation = DIRS21.Models.Google.Reservation;
+using DIRS21.Partners.Internal;
+using GoogleReservation = DIRS21.Partners.Google.Reservation;
+using AirbnbReservation = DIRS21.Partners.Airbnb.Reservationn;
 
 MapperConfigurationHandler.LoadConfiguration();
 
@@ -28,5 +29,18 @@ var googleReservation2 = new GoogleReservation()
 };
 
 var internalReservation2 = _mapHandler.Map(googleReservation2, "Google.Reservation", "Model.Reservation");
+
+var internalReservation3 = new Reservation()
+{
+    Id = "G-001",
+    FirstName = "Jon",
+    LastName = "Smith",
+    RoomId = "RM-0207",
+    From = DateTime.UtcNow.AddDays(30),
+    To = DateTime.UtcNow.AddDays(31)
+};
+
+var airbnbReservationn = _mapHandler.Map(internalReservation3, "Model.Reservation", "Airbnb.Reservation");
+
 
 Console.ReadLine();

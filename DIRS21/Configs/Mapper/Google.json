@@ -2,11 +2,11 @@
   {
     "source": {
       "identifier": "Google.Reservation",
-      "typeName": "DIRS21.Models.Google.Reservation"
+      "typeName": "DIRS21.Partners.Google.Reservation"
     },
     "target": {
       "identifier": "Model.Reservation",
-      "typeName": "DIRS21.Models.Internal.Reservation"
+      "typeName": "DIRS21.Partners.Internal.Reservation"
     },
     "mappings": [
       {
@@ -30,11 +30,11 @@
   {
     "source": {
       "identifier": "Model.Reservation",
-      "typeName": "DIRS21.Models.Internal.Reservation"
+      "typeName": "DIRS21.Partners.Internal.Reservation"
     },
     "target": {
       "identifier": "Google.Reservation",
-      "typeName": "DIRS21.Models.Google.Reservation"
+      "typeName": "DIRS21.Partners.Google.Reservation"
     },
     "mappings": [
       {

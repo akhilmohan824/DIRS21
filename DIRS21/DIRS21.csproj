@@ -8,6 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Update="Configs\Mapper\Airbnb.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Configs\Mapper\Google.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
