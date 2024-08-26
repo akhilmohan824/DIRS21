@@ -1,0 +1,51 @@
+[
+  {
+    "source": {
+      "identifier": "Google.Reservation",
+      "typeName": "DIRS21.Models.Google.Reservation"
+    },
+    "target": {
+      "identifier": "Model.Reservation",
+      "typeName": "DIRS21.Models.Internal.Reservation"
+    },
+    "mappings": [
+      {
+        "targetName": "Id",
+        "sourceNames": [ "Id" ]
+      },
+      {
+        "targetName": "FirstName",
+        "sourceNames": [ "Name" ],
+        "ruleType": "DIRS21.Mapper.Rules.SubStringRule",
+        "paramters": [ " ", "0" ]
+      },
+      {
+        "targetName": "LastName",
+        "sourceNames": [ "Name" ],
+        "ruleType": "DIRS21.Mapper.Rules.SubStringRule",
+        "paramters": [ " ", "1" ]
+      }
+    ]
+  },
+  {
+    "source": {
+      "identifier": "Model.Reservation",
+      "typeName": "DIRS21.Models.Internal.Reservation"
+    },
+    "target": {
+      "identifier": "Google.Reservation",
+      "typeName": "DIRS21.Models.Google.Reservation"
+    },
+    "mappings": [
+      {
+        "targetName": "Id",
+        "sourceNames": [ "Id" ]
+      },
+      {
+        "targetName": "Name",
+        "sourceNames": [ "FirstName", "LastName" ],
+        "ruleType": "DIRS21.Mapper.Rules.StringJoinRule"
+      }
+    ]
+  }
+]
